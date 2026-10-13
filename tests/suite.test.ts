@@ -144,3 +144,32 @@ test('7. AcademicResearchAssistant formats citations in IEEE, APA, and MLA', () 
   const mla = academicAssistant.generateCitation(title, authors, 2022, 'Routledge', 'MLA');
   assert.match(mla.citation, /Thomas J\. Holt, and Adam M\. Bossler\. "Cybercrime and Digital Forensics\." Routledge, 2022\./);
 });
+
+test('8. LocalReasoningEngine accurately returns official NFSU library timings', () => {
+  const engine = new LocalReasoningEngine();
+  const res = engine.processQuery('When will the library open and close?', []);
+  assert.equal(res.extraction.intent, 'faq_query');
+  assert.match(res.assistantResponse, /9:30 AM to 8:00 PM/);
+  assert.match(res.assistantResponse, /10:00 AM to 6:00 PM/);
+  assert.match(res.assistantResponse, /24×7|24x7/i);
+});
+
+test('9. LocalReasoningEngine accurately returns official fines and lost book policies', () => {
+  const engine = new LocalReasoningEngine();
+  const res = engine.processQuery('What is the fine on the books?', []);
+  assert.equal(res.extraction.intent, 'faq_query');
+  assert.match(res.assistantResponse, /Overdue/i);
+  assert.match(res.assistantResponse, /Rs\. 100/i);
+  assert.match(res.assistantResponse, /new physical copy/i);
+});
+
+test('10. LocalReasoningEngine accurately returns official borrowing limits', () => {
+  const engine = new LocalReasoningEngine();
+  const res = engine.processQuery('How many books can a student borrow from the library?', []);
+  assert.equal(res.extraction.intent, 'faq_query');
+  assert.match(res.assistantResponse, /Faculty.*10/i);
+  assert.match(res.assistantResponse, /PhD.*6/i);
+  assert.match(res.assistantResponse, /PG.*4/i);
+  assert.match(res.assistantResponse, /UG.*3/i);
+});
+

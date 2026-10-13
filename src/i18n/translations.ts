@@ -83,11 +83,11 @@ export const translations: Record<Language, Translations> = {
     chatWelcomeTitle: "Welcome to NFSU Library Research Assistant",
     chatWelcomeSubtitle: "I can help you discover books, formulate research queries, format citations, and navigate campus resources.",
     suggestedQuestions: [
+      "When does the library open and close?",
+      "What is the fine for overdue or lost books?",
+      "How many books can a student borrow?",
       "Find books on Digital Forensics & Incident Response",
-      "How do I access ONOS e-journals from off-campus?",
-      "Generate a Boolean query for Ransomware threat hunting",
-      "Format an IEEE citation for a cyber forensics paper",
-      "Is Spencer's Introduction to Forensic Science available?"
+      "How do I access ONOS e-journals from off-campus?"
     ],
     inputPlaceholder: "Ask about books, e-resources, citations, or library services...",
     send: "Send",
@@ -152,11 +152,11 @@ export const translations: Record<Language, Translations> = {
     chatWelcomeTitle: "एनएफएसयू पुस्तकालय अनुसंधान सहायक में आपका स्वागत है",
     chatWelcomeSubtitle: "मैं पुस्तकें खोजने, अनुसंधान क्वेरी तैयार करने, उद्धरण प्रारूपित करने और परिसर संसाधनों को नेविगेट करने में मदद कर सकता हूँ।",
     suggestedQuestions: [
+      "पुस्तकालय के खुलने और बंद होने का समय क्या है?",
+      "पुस्तकों पर विलंब शुल्क (Fine) और खोई पुस्तक के नियम क्या हैं?",
+      "एक छात्र कितनी पुस्तकें उधार ले सकता है?",
       "डिजिटल फोरेंसिक और इंसीडेंट रिस्पॉन्स पर पुस्तकें खोजें",
-      "परिसर के बाहर से ONOS ई-पत्रिकाओं तक कैसे पहुंचें?",
-      "रैनसमवेयर विश्लेषण के लिए बूलियन क्वेरी बनाएं",
-      "साइबर फोरेंसिक शोधपत्र के लिए IEEE उद्धरण तैयार करें",
-      "क्या जेम्स स्पेंसर की फोरेंसिक साइंस पुस्तक उपलब्ध है?"
+      "परिसर के बाहर से ONOS ई-पत्रिकाओं तक कैसे पहुंचें?"
     ],
     inputPlaceholder: "पुस्तकों, ई-संसाधनों, उद्धरणों या पुस्तकालय सेवाओं के बारे में पूछें...",
     send: "भेजें",
@@ -221,11 +221,11 @@ export const translations: Record<Language, Translations> = {
     chatWelcomeTitle: "NFSU લાઇબ્રેરી રિસર્ચ આસિસ્ટન્ટમાં આપનું સ્વાગત છે",
     chatWelcomeSubtitle: "હું પુસ્તકો શોધવા, સંશોધન પ્રશ્નો તૈયાર કરવા, સંદર્ભ બનાવવામાં અને સંસાધનો શોધવામાં મદદ કરી શકું છું.",
     suggestedQuestions: [
+      "લાઇબ્રેરી ક્યારે ખુલે છે અને બંધ થાય છે?",
+      "વિલંબિત કે ખોવાયેલ પુસ્તકો પર કેટલો દંડ છે?",
+      "વિદ્યાર્થી કેટલી પુસ્તકો ઇશ્યુ કરાવી શકે છે?",
       "ડિજિટલ ફોરેન્સિક્સ અને ઇન્સિડેન્ટ રિસ્પોન્સ પર પુસ્તકો શોધો",
-      "કેમ્પસ બહારથી ONOS ઈ-જર્નલ્સ કેવી રીતે એક્સેસ કરવા?",
-      "રેન્સમવેર વિશ્લેષણ માટે બુલિયન ક્વેરી બનાવો",
-      "સાયબર ફોરેન્સિક્સ પેપર માટે IEEE સાઇટેશન બનાવો",
-      "શું જેમ્સ સ્પેન્સરનું ફોરેન્સિક સાયન્સ પુસ્તક ઉપલબ્ધ છે?"
+      "કેમ્પસ બહારથી ONOS ઈ-જર્નલ્સ કેવી રીતે એક્સેસ કરવા?"
     ],
     inputPlaceholder: "પુસ્તકો, ઈ-સંસાધનો, સાઇટેશન અથવા લાઇબ્રેરી સેવાઓ વિશે પૂછો...",
     send: "મોકલો",
